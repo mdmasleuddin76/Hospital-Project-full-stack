@@ -15,6 +15,7 @@
 
 /* some resets */
 *{
+    scroll-behavior: smooth;
     padding: 0;
     margin: 0;
     -webkit-box-sizing: border-box;
@@ -161,7 +162,7 @@ h1, h2, h3{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 3.2rem 0;
+    padding: 2.2rem 0;
     z-index: 999;
 }
 .navbar .container{
@@ -170,6 +171,9 @@ h1, h2, h3{
             justify-content: space-between;
 }
 .navbar-brand img{
+    margin-left: 20px;
+    border-radius: 25px;
+    border: 2px solid #fff;
     width: 168px;
 }
 .navbar-show-btn, .navbar-hide-btn{
@@ -272,6 +276,7 @@ button[class ^= navbar]:hover{
 
 /* header inner */
 .header-inner{
+    overflow: hidden;
     padding-top: 16rem;
 }
 .header-inner-left h1{
@@ -599,6 +604,7 @@ button[class ^= navbar]:hover{
 .contact-left{
     margin-bottom: 6rem;
     height: 100%;
+    width: 40vw;
 }
 .contact-left iframe{
     width: 100%;
@@ -609,6 +615,7 @@ button[class ^= navbar]:hover{
 .contact-right{
     width: 100%;
     padding: 5rem 4rem;
+    /* width: 50vw; */
 }
 .contact-right form{
     margin-top: 5rem;
@@ -762,6 +769,8 @@ button[class ^= navbar]:hover{
         position: relative;
     }
     .header-inner-left{
+        position: absolute;
+        top: 25%;
         text-align: left;
     }
     .header-inner-left .text{
@@ -934,8 +943,9 @@ button[class ^= navbar]:hover{
         width: 100%;
     }
     .header-inner-right img{
+        top: 12%;
         padding-left: 0;
-        max-width: 647px;
+        max-width: 547px;
     }
 
     .services-inner{
@@ -960,7 +970,7 @@ button[class ^= navbar]:hover{
     }
 
     .contact .container{
-        grid-template-columns: auto 514px;
+        grid-template-columns: auto 666px;
     }
     .footer-inner{
         grid-template-columns: repeat(4, 1fr);
