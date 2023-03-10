@@ -273,6 +273,7 @@ button[class ^= navbar]:hover{
 /* header inner */
 .header-inner{
     padding-top: 16rem;
+    overflow: hidden;
 }
 .header-inner-left h1{
     font-size: 4rem;
@@ -934,8 +935,9 @@ button[class ^= navbar]:hover{
         width: 100%;
     }
     .header-inner-right img{
+        top: 12%;
         padding-left: 0;
-        max-width: 647px;
+        max-width: 547px;
     }
 
     .services-inner{
