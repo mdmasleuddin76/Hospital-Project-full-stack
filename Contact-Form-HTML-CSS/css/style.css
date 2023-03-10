@@ -12,8 +12,7 @@ textarea {
   font-family: "Poppins", sans-serif;
 }
 
-.contact-right .container {
-  z-index: 1;
+.container {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -25,7 +24,7 @@ textarea {
   justify-content: center;
 }
 
-.contact-right .form {
+.form {
   width: 100%;
   max-width: 820px;
   background-color: #fff;
@@ -37,32 +36,32 @@ textarea {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.contact-right .contact-form {
+.contact-form {
   background-color: #1abc9c;
   position: relative;
 }
 
-.contact-right .circle {
+.circle {
   border-radius: 50%;
   background: linear-gradient(135deg, transparent 20%, #149279);
   position: absolute;
 }
 
-.contact-right .circle.one {
+.circle.one {
   width: 130px;
   height: 130px;
   top: 130px;
   right: -40px;
 }
 
-.contact-right .circle.two {
+.circle.two {
   width: 80px;
   height: 80px;
   top: 10px;
   right: 30px;
 }
 
-.contact-right .contact-form:before {
+.contact-form:before {
   content: "";
   position: absolute;
   width: 26px;
@@ -73,14 +72,14 @@ textarea {
   left: -13px;
 }
 
-.contact-right form {
+form {
   padding: 2.3rem 2.2rem;
   z-index: 10;
   overflow: hidden;
   position: relative;
 }
 
-.contact-right .title {
+.title {
   color: #fff;
   font-weight: 500;
   font-size: 1.5rem;
@@ -88,12 +87,12 @@ textarea {
   margin-bottom: 0.7rem;
 }
 
-.contact-right .input-container {
+.input-container {
   position: relative;
   margin: 1rem 0;
 }
 
-.contact-right .input {
+.input {
   width: 100%;
   outline: none;
   border: 2px solid #fafafa;
@@ -107,7 +106,7 @@ textarea {
   transition: 0.3s;
 }
 
-.contact-right textarea.input {
+textarea.input {
   padding: 0.8rem 1.2rem;
   min-height: 150px;
   border-radius: 22px;
@@ -115,7 +114,7 @@ textarea {
   overflow-y: auto;
 }
 
-.contact-right .input-container label {
+.input-container label {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -129,12 +128,12 @@ textarea {
   transition: 0.5s;
 }
 
-.contact-right .input-container.textarea label {
+.input-container.textarea label {
   top: 1rem;
   transform: translateY(0);
 }
 
-.contact-right .btn {
+.btn {
   padding: 0.6rem 1.3rem;
   background-color: #fff;
   border: 2px solid #fafafa;
@@ -148,12 +147,12 @@ textarea {
   margin: 0;
 }
 
-.contact-right .btn:hover {
+.btn:hover {
   background-color: transparent;
   color: #fff;
 }
 
-.contact-right .input-container span {
+.input-container span {
   position: absolute;
   top: 0;
   left: 25px;
@@ -165,8 +164,8 @@ textarea {
   z-index: 500;
 }
 
-.contact-right .input-container span:before,
-.contact-right .input-container span:after {
+.input-container span:before,
+.input-container span:after {
   content: "";
   position: absolute;
   width: 10%;
@@ -178,42 +177,42 @@ textarea {
   transform: translateY(-50%);
 }
 
-.contact-right .input-container span:before {
+.input-container span:before {
   left: 50%;
 }
 
-.contact-right .input-container span:after {
+.input-container span:after {
   right: 50%;
 }
 
-.contact-right .input-container.focus label {
+.input-container.focus label {
   top: 0;
   transform: translateY(-50%);
   left: 25px;
   font-size: 0.8rem;
 }
 
-.contact-right .input-container.focus span:before,
-.contact-right .input-container.focus span:after {
+.input-container.focus span:before,
+.input-container.focus span:after {
   width: 50%;
   opacity: 1;
 }
 
-.contact-right .contact-info {
+.contact-info {
   padding: 2.3rem 2.2rem;
   position: relative;
 }
 
-.contact-right .contact-info .title {
+.contact-info .title {
   color: #1abc9c;
 }
 
-.contact-right .text {
+.text {
   color: #333;
   margin: 1.5rem 0 2rem 0;
 }
 
-.contact-right .information {
+.information {
   display: flex;
   color: #555;
   margin: 0.7rem 0;
@@ -221,25 +220,25 @@ textarea {
   font-size: 0.95rem;
 }
 
-.contact-right .icon {
+.icon {
   width: 28px;
   margin-right: 0.7rem;
 }
 
-.contact-right .social-media {
+.social-media {
   padding: 2rem 0 0 0;
 }
 
-.contact-right .social-media p {
+.social-media p {
   color: #333;
 }
 
-.contact-right .social-icons {
+.social-icons {
   display: flex;
   margin-top: 0.5rem;
 }
 
-.contact-right .social-icons a {
+.social-icons a {
   width: 35px;
   height: 35px;
   border-radius: 5px;
@@ -251,11 +250,11 @@ textarea {
   transition: 0.3s;
 }
 
-.contact-right .social-icons a:hover {
+.social-icons a:hover {
   transform: scale(1.05);
 }
 
-.contact-right .contact-info:before {
+.contact-info:before {
   content: "";
   position: absolute;
   width: 110px;
@@ -267,7 +266,7 @@ textarea {
   opacity: 0.3;
 }
 
-.contact-right .big-circle {
+.big-circle {
   position: absolute;
   width: 500px;
   height: 500px;
@@ -278,7 +277,7 @@ textarea {
   transform: translate(-40%, 38%);
 }
 
-.contact-right .big-circle:after {
+.big-circle:after {
   content: "";
   position: absolute;
   width: 360px;
@@ -289,7 +288,7 @@ textarea {
   left: calc(50% - 180px);
 }
 
-.contact-right .square {
+.square {
   position: absolute;
   height: 400px;
   top: 50%;
@@ -299,87 +298,87 @@ textarea {
 }
 
 @media (max-width: 850px) {
-  .contact-right .form {
+  .form {
     grid-template-columns: 1fr;
   }
 
-  .contact-right .contact-info:before {
+  .contact-info:before {
     bottom: initial;
     top: -75px;
     right: 65px;
     transform: scale(0.95);
   }
 
-  .contact-right  .contact-form:before {
+  .contact-form:before {
     top: -13px;
     left: initial;
     right: 70px;
   }
 
-  .contact-right  .square {
+  .square {
     transform: translate(140%, 43%);
     height: 350px;
   }
 
-  .contact-right .big-circle {
+  .big-circle {
     bottom: 75%;
     transform: scale(0.9) translate(-40%, 30%);
     right: 50%;
   }
 
-  .contact-right  .text {
+  .text {
     margin: 1rem 0 1.5rem 0;
   }
 
-  .contact-right .social-media {
+  .social-media {
     padding: 1.5rem 0 0 0;
   }
 }
 
 @media (max-width: 480px) {
-  .contact-right  .container {
+  .container {
     padding: 1.5rem;
   }
 
-  .contact-right  .contact-info:before {
+  .contact-info:before {
     display: none;
   }
 
-  .contact-right .square,
-  .contact-right .big-circle {
+  .square,
+  .big-circle {
     display: none;
   }
 
-  .contact-right  form,
+  form,
   .contact-info {
     padding: 1.7rem 1.6rem;
   }
 
-  .contact-right  .text,
-  .contact-right  .information,
-  .contact-right .social-media p {
+  .text,
+  .information,
+  .social-media p {
     font-size: 0.8rem;
   }
 
-  .contact-right  .title {
+  .title {
     font-size: 1.15rem;
   }
 
-  .contact-right  .social-icons a {
+  .social-icons a {
     width: 30px;
     height: 30px;
     line-height: 30px;
   }
 
-  .contact-right  .icon {
+  .icon {
     width: 23px;
   }
 
-  .contact-right .input {
+  .input {
     padding: 0.45rem 1.2rem;
   }
 
-  .contact-right .btn {
+  .btn {
     padding: 0.45rem 1.2rem;
   }
 }
