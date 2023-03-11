@@ -26,7 +26,7 @@
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
-    background-image: linear-gradient(-45deg, #1ff5a3 0%, #58f1b6 100%);
+    background-image: linear-gradient(-45deg, #169d82 0%, #17ad8e 100%);
     transition: 1.8s ease-in-out;
     border-radius: 50%;
     z-index: 6;
@@ -144,13 +144,13 @@
   }
 
   .social_icon:hover {
-    color: #1ff5a3;
-    border-color: #1ff5a3;
+    color: #169d82;
+    border-color: #169d82;
   }
 
   .btn {
     width: 150px;
-    background-color: #1ff5a3;
+    background-color: #169d82;
     border: none;
     outline: none;
     height: 49px;
@@ -228,7 +228,10 @@
     font-weight: 600;
     font-size: 0.8rem;
   }
-  
+  .btn.transparent:hover{
+    background-color: #fff;
+    color: #169d82;
+  }
   .right_panel .image,
   .right_panel .content {
     transform: translateX(800px);
