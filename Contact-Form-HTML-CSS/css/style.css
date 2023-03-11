@@ -17,7 +17,7 @@ textarea {
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
-  background-color: #fafafa;
+  background-color: #dddddd;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -30,6 +30,7 @@ textarea {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 25px #333;
   z-index: 1000;
   overflow: hidden;
   display: grid;

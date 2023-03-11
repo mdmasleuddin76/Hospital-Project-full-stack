@@ -2,8 +2,8 @@
 
 /* variables */
 :root{
-    --fros-blue-color: #0050d5;
-    --light-blue-color: #16c5ff;
+    --fros-blue-color: #17ad8e;
+    --light-blue-color: #159f84;
     --dark-color: #202020;
     --light-gray: #dedede;
     --dark-gray: #a1a1a0;
@@ -158,6 +158,8 @@ h1, h2, h3{
     min-height: 100vh;
 }
 .navbar{
+    background-color: #169d82;
+    box-shadow: 5px 5px 20px #333;
     position: fixed;
     top: 0;
     left: 0;
@@ -171,9 +173,10 @@ h1, h2, h3{
             justify-content: space-between;
 }
 .navbar-brand img{
+    box-shadow: 2px 2px 10px #333;
+    border: 1px solid #222;
     margin-left: 20px;
     border-radius: 25px;
-    border: 2px solid #fff;
     width: 168px;
 }
 .navbar-show-btn, .navbar-hide-btn{
@@ -353,12 +356,12 @@ button[class ^= navbar]:hover{
 }
 .about-right .img{
     width: 100%;
-    background-color: #3983fe;
+    background-color: #17ad8e;
     max-width: 537px;
     position: relative;
 }
 .about-right .img img{
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
     -webkit-transform: scaleX(1.03);
         -ms-transform: scaleX(1.03);
             transform: scaleX(1.03);
@@ -372,7 +375,7 @@ button[class ^= navbar]:hover{
 .about-right .img::after{
     top: -56px;
     left: 0;
-    background-color: #0060ff;
+    background-color: #10715e;
     z-index: -1;
 }
 .about-right .img::before{
@@ -386,7 +389,7 @@ button[class ^= navbar]:hover{
 .banner-one{
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.9)), to(rgba(0, 90, 213, 0.85))), url('../images/banner-1-img.png') top/cover no-repeat;
     background: -o-linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('../images/banner-1-img.png') top/cover no-repeat;
-    background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('../images/banner-1-img.png') top/cover no-repeat;
+    background: linear-gradient(rgb(23, 173, 142,0.4), rgb(23, 173, 142, 0.85)), url('../images/banner-1-img.png') top/cover no-repeat;
     height: 480px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -450,7 +453,7 @@ button[class ^= navbar]:hover{
 .banner-two{
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.9)), to(rgba(0, 90, 213, 0.85))), url('../images/banner-two-bg.png') top/cover no-repeat;
     background: -o-linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('../images/banner-two-bg.png') top/cover no-repeat;
-    background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('../images/banner-two-bg.png') top/cover no-repeat;
+    background: linear-gradient(rgb(23, 173, 142,0.7), rgb(23, 173, 142, 0.6)), url('../images/banner-two-bg.png') top/cover no-repeat;
     padding: 13.6rem 0;
 }
 .banner-two-left img{
@@ -502,6 +505,7 @@ button[class ^= navbar]:hover{
     transition: var(--transition);
 }
 .doc-panel-item .img{
+    box-shadow: 5px 5px 15px #333;
     max-width: 357px;
     margin-left: auto;
     margin-right: auto;
@@ -517,7 +521,7 @@ button[class ^= navbar]:hover{
 .package-service{
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.85)), to(rgba(0, 80, 213, 0.95))), url('../images/package-service-img.jpg') center/cover no-repeat;
     background: -o-linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)), url('../images/package-service-img.jpg') center/cover no-repeat;
-    background: linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)), url('../images/package-service-img.jpg') center/cover no-repeat;
+    background: linear-gradient(rgb(23, 173, 142, 0.55), rgb(23, 173, 142, 0.4)), url('../images/package-service-img.jpg') center/cover no-repeat;
 }
 .package-service-head{
     color: var(--light-color);
@@ -534,6 +538,7 @@ button[class ^= navbar]:hover{
     margin-bottom: 0;
 }
 .package-service-item .icon{
+    border: 1px solid #fff;
     width: 86px;
     height: 86px;
     background-color: var(--light-blue-color);
@@ -621,6 +626,32 @@ button[class ^= navbar]:hover{
 .contact-right form{
     margin-top: 5rem;
 }
+/* Admin Button */
+.admin-btn-container{
+    height: 13vh;
+    text-align: center;
+    background-color: #dedede;
+}
+.admin-btn{
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    word-spacing: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    color: #fff;
+    font-size: 20px;
+    background-color: #169d82;
+    padding: 15px;
+    border-radius: 35px;
+    box-shadow: 3px 3px 10px #333;
+}
+.admin-btn:hover{
+    color: #13836c;
+    border: 1px solid #13836c;
+    background-color: #dffaf5;
+}
+
 /* footer */
 .footer{
     background-color: var(--dark-color);
@@ -711,6 +742,7 @@ button[class ^= navbar]:hover{
         width: 320px;
     }
     .btn-group .btn{
+        border: 1px solid #fff;
         width: auto;
     }
     .btn-group .btn:first-child{
@@ -836,6 +868,8 @@ button[class ^= navbar]:hover{
         margin-top: 0;
     }
     .banner-two-left img{
+        border: 1px solid #fff;
+        box-shadow: 2px 2px 20px #333;
         width: 100%;
         max-width: 100%;
     }
@@ -899,6 +933,7 @@ button[class ^= navbar]:hover{
         margin-left: 3.5rem;
     }
     .nav-link{
+        font-size: 18px;
         color: var(--light-color);
         opacity: 1;
         font-weight: 500;
@@ -967,6 +1002,7 @@ button[class ^= navbar]:hover{
         grid-template-columns: repeat(3, 1fr);
     }
     .post-item{
+        box-shadow: 5px 5px 15px #333;
         margin-bottom: 0;
     }
 
