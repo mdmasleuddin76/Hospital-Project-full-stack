@@ -52,6 +52,7 @@ form input,form select,form select{
 	margin: 0.3rem;
 	margin: auto;
 	border: #32be8f 1px solid;
+	border-radius: 20px;
 }
 .loginco{
 	background:linear-gradient(rgba(102, 255, 242, 0.4),rgba(96, 244, 212, 0.4));
