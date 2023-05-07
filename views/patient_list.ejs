@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Patient</title>
+    <!-- <link rel="stylesheet" href="./list/css/style.css" />
+     -->
+     <link rel="stylesheet" href="/list/css/style.css">
+
+    <script src="https://kit.fontawesome.com/5d453ece2a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a href="/" class="nav-brand text-dark">Patient Details</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <!-- <a href="/add-user" class="border-shadow">
+                    <span class="text-gradient">  <i class="fa-solid fa-user"></i></span>
+                </a> -->
+            </div>
+            <!-- Form Handling  -->
+            <form action="/signin/all-patients" method="post">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name </th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Department</th>
+                            <th>Date of Appointment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% for(var i=0; i < users.length; i++) { %>
+                            <tr>
+                                <td>
+                                    <%= users[i].appointmentid %>
+                                </td>
+                                <td>
+                                    <%= users[i].name %>
+                                </td>
+                                <td>
+                                    <%= users[i].age %>
+                                </td>
+                                <td>
+                                    <%= users[i].gender %>
+                                </td>
+                                <td>
+                                    <%= users[i].department %>
+                                </td>
+                                <td>
+                                    <%= users[i].date %>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script> -->
+</body>
+
+</html>

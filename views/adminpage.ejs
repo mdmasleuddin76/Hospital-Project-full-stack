@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./adminpage/css/style.css" />
+  <script src="https://kit.fontawesome.com/8338cf495e.js" crossorigin="anonymous"></script>
+
+  <title>AdminHub</title>
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <section id="sidebar">
+    <a href="#" class="brand">
+      <i class="bx bxs-smile"></i>
+      <span class="text">
+        <%=username%>
+      </span>
+    </a>
+    <ul class="side-menu top">
+      <li class="active">
+        <a href="#">
+          <i class="bx bxs-dashboard"></i>
+          <span class="text">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-doughnut-chart"></i>
+          <span class="text">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-message-dots"></i>
+          <span class="text">Login/Sign Up</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="bx bxs-group"></i>
+          <span class="text">Contact Us</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="side-menu">
+      <li>
+        <a href="#">
+          <i class="bx bxs-cog"></i>
+          <span class="text">Know More</span>
+        </a>
+      </li>
+      <li>
+        <a href="/logout" class="logout">
+          <i class="bx bxs-log-out-circle"></i>
+          <span class="text">Log Out</span>
+          <!-- <a href="/logout" class="text">Log Out</a> -->
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!-- SIDEBAR -->
+
+  <!-- CONTENT -->
+
+  <section id="content">
+    <!-- NAVBAR -->
+    <nav>
+      <i class="bx bx-menu fa-2x"></i>
+      <h3>
+        <%=username%>
+      </h3>
+      <!-- <a href="#" class="nav-link">Categories</a> -->
+      <form action="#">
+        <div class="form-input">
+          <input type="search" placeholder="Search..." />
+          <button type="submit" class="search-btn">
+            <i class="bx bx-search"></i>
+          </button>
+        </div>
+      </form>
+      <input type="checkbox" id="switch-mode" hidden />
+      <label for="switch-mode" class="switch-mode"></label>
+      <a href="#" class="notification">
+        <i class="bx bxs-bell"></i>
+        <span class="num">8</span>
+      </a>
+      <a href="#" class="profile">
+        <img src="./adminpage/img/Sid.jpeg" />
+      </a>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- MAIN -->
+    <main>
+
+      <ul class="box-info">
+        <li>
+          <i class="bx bxs-calendar-check"></i>
+          <span class="text">
+            <h3>1020</h3>
+            <p>Patients Cured</p>
+          </span>
+        </li>
+        <li>
+          <i class="bx bxs-group"></i>
+          <span class="text">
+            <h3>2834</h3>
+            <p>Visitors</p>
+          </span>
+        </li>
+        <li>
+          <i class="bx bxs-dollar-circle"></i>
+          <span class="text">
+            <h3>$2543</h3>
+            <p>Total Revenue</p>
+          </span>
+        </li>
+      </ul>
+
+
+
+      <div class="container">
+        <!-- <form class="search" action="" method="post">
+          <div class="btn-top">
+            <a href="#" class="btn-new" onclick="show_hide1()">Search Patient &nbsp<i
+                class="fa-sharp fa-solid fa-magnifying-glass-plus"></i></a>
+          </div>
+          <div class="form-box" id="patient">
+            <h2>Details of Patients</h2>
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-user-plus"></i></span>
+              <input type="text" id="patient-name" required />
+              <label for="patient-name">Name</label>
+            </div>
+            <a href="#" class="apply-btn">Search</a> -->
+            <!-- <button type="submit" class="apply-btn">Search</button>
+          </form>
+        </div> -->
+
+        <form class="search" method="post" action="signin/add-medicine">
+          <div class="btn-top">
+            <a href="#" class="btn-new" onclick="show_hide2()">Pharmacy &nbsp<i class="fa-solid fa-square-plus"></i></a>
+          </div>
+            <div class="form-box" id="medicine1">
+              <h2>Add Medicines</h2>
+              <div class="input-box">
+                <span class="icon"><i class="fa-solid fa-user-plus"></i></span>
+                <input type="text" id="add-medicine-name" name="name" required />
+                <label for="add-medicine-name">Name</label>
+              </div>
+              <div class="input-box">
+                <span class="icon"><i class="fa-solid fa-truck-medical"></i></span>
+                <input type="text" id="manufacturer" name="manufacturer" required />
+                <label for="manufacturer">
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                  Manufacturer</label>
+              </div>
+              <div class="input-box">
+                <input type="number" id="medicine-quantity" min="1" max="100" name="quantity" required />
+                <label for="medicine-quantity"> &nbsp&nbsp&nbsp&nbsp Quantity</label>
+              </div>
+              <div class="input-box">
+                <input type="date" id="date-of-exp" name="dateofexp" required />
+                <label for="date-of-exp">
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                  Date of EXP</label>
+              </div>
+              <button type="submit" class="apply-btn">Apply Changes</button>
+            </div>
+          </form>
+
+        <form class="search" method="post" action="/signin/delete-medicine">
+          <div class="btn-top">
+            <a href="#" class="btn-new" onclick="show_hide3()">Pharmacy &nbsp<i class="fa-solid fa-square-minus"></i>
+            </a>
+          </div>
+          <div class="form-box" id="medicine2">
+            <h2>Delete Medicines</h2>
+            <div class="input-box">
+              <span class="icon"><i class="fa-solid fa-user-plus"></i></span>
+              <input type="text" name="name" required />
+              <label for="">Name</label>
+            </div>
+            <button type="submit" class="apply-btn">Apply Changes</button>
+          </div>
+        </form>
+        <a href="/signin/all-patients" class="apply-btn">List All Patients</a>
+        <br>
+        <a href="/signin/all-medicines" class="apply-btn">List All Medicines</a>
+      </div>
+
+
+    </main>
+
+    <!-- MAIN -->
+  </section>
+  <!-- CONTENT -->
+
+  <script src="/adminpage/js/script.js"></script>
+  <script>
+    let a = 1;
+    function show_hide1() {
+      if (a == 1) {
+        document.getElementById("patient").style.display = "inline";
+        return (a = 0);
+      } else {
+        document.getElementById("patient").style.display = "none";
+        return (a = 1);
+      }
+    }
+  </script>
+  <script>
+    let b = 1;
+    function show_hide2() {
+      if (b == 1) {
+        document.getElementById("medicine1").style.display = "inline";
+        return (b = 0);
+      } else {
+        document.getElementById("medicine1").style.display = "none";
+        return (b = 1);
+      }
+    }
+  </script>
+  <script>
+    let c = 1;
+    function show_hide3() {
+      if (c == 1) {
+        document.getElementById("medicine2").style.display = "inline";
+        return (c = 0);
+      } else {
+        document.getElementById("medicine2").style.display = "none";
+        return (c = 1);
+      }
+    }
+  </script>
+</body>
+
+</html>

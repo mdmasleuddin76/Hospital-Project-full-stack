@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Success</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* background: #161623; */
+            /* background-image: linear-gradient(to right, #404141, #ddd, #404141); */
+            /* background: linear-gradient(-45deg,#64ab9c,#cca185,#84ca81,#d8c192); */
+            background-image: radial-gradient(circle, #ddd,#ccc,#5ac1ad, #17ad8e);
+            /* background-size: 400% 400%;
+            animation: animate 5s ease infinite; */
+        }
+        /* @keyframes animate{
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        } */
+        body::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#f00,#17ad8e);
+            clip-path: circle(15% at 68% 84%);
+        }
+        body::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(#17ad8e,#137dd3);
+            clip-path: circle(20% at 28% 20%);
+        }
+        .container{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 1200px;
+            flex-wrap: wrap;
+            z-index: 1;
+        }
+        .container .card{
+            position: relative;
+            width: 320px;
+            height: 400px;
+            margin: 30px;
+            box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+            background: rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            border-left: rgba(255,255,255,0.5);
+            backdrop-filter: blur(5px);
+            border-radius: 12px;
+        }
+        .container .card .content{
+            padding: 20px;
+            text-align: center;
+            transition: 0.5s;
+        }
+        .container .card .content h2{
+            position: absolute;
+            top: 5px;
+            right: 8px;
+            font-size: 1.5em;
+            color: rgba(47, 48, 48, 0.32);
+            pointer-events: none;
+        }
+        .container .card .content h3{
+            font-size: 1.8rem;
+            color: #333;
+            z-index: 1;
+            text-shadow: 0 0.5px 2.5px #333;
+        }
+        .container .card .content p{
+            font-size: 1em;
+            color: #222;
+            font-weight: 500;
+        }
+        h4{
+            color: #333;
+            font-weight: 600;
+        }
+        .container .card .content a{
+            position: relative;
+            display: inline-block;
+            padding: 8px 20px;
+            margin-top: 15px;
+            text-decoration: none;
+            font-weight: 500;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            background-size: 260%;
+            background-image: linear-gradient(to right, #32be8f, #096244,#32be8f);
+            color: #fff;
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+            transition: 0.4s;
+            border-radius: 25px;
+            border: 1px solid #fff;
+        }
+
+        /* .container a{
+            color: #fff;
+            border: 1.5px solid #fff;
+            background-size: 200%;
+            background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+            border-radius: 25px;
+            padding: 0.3rem 0.5rem;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            width: 70%;
+            transition: 0.4s;
+        } */
+        .container a:hover{
+            background-position: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>MA Ansari<br>Health Care</h2>
+                <h3>Id: <%=id%></h3>
+                <p>Your appointment has been succesfully booked. Kindly check your Email and SMS for appointment date and time.</p>
+                <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-Thank You</h4><br>
+                <a href="/appointment">Book Another</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
