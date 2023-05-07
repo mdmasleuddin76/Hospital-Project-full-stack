@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Book Your Appointment</title>
+  <link rel="stylesheet" type="text/css" href="./appoinment form/css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <img class="wave" src="./appoinment form/img/wave.png" />
+  <div class="container">
+    <div class="img">
+      <img src="./appoinment form/img/bg.svg" />
+    </div>
+    <div class="loginco">
+      <div class="loginco2">
+        <img src="./appoinment form/img/avatar.svg">
+        <h2 class="title">Welcome</h2>
+        <form action="/appointment" method="post" autocomplete="off">
+          <label for="fname">Name</label>
+          <input type="text" name="name" id="fname" />
+          <label for="phone">Phone NO</label>
+          <input type="text" name="phone" id="phone" maxlength="10" />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+          <label for="age">Age</label>
+          <input type="text" name="age" id="age" />
+          <label for="gender">Select your Gender</label>
+          <select name="gender" id="gender">
+            <option value="" selected disabled>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <label for="department">Select your Department</label>
+          <select id="department" name="department">
+            <option value="" selected disabled>Select Specialty</option>
+            <option value="cardiology">Cardiology</option>
+            <option value="dermatology">Dermatology</option>
+            <option value="endocrinology">Endocrinology</option>
+            <option value="gastroenterology">Gastroenterology</option>
+            <option value="neurology">Neurology</option>
+            <option value="oncology">Oncology</option>
+            <option value="pediatrics">Pediatrics</option>
+            <option value="psychiatry">Psychiatry</option>
+            <option value="radiology">Radiology</option>
+            <option value="urology">Urology</option>
+          </select>
+          <label for="date">Date of Appointment</label>
+          <input type="date" id="date" name="date">
+          <button class="btn">Submit</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
